@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+/* https://www.w3schools.com/cssref/css_colors.asp */
+/* https://www.w3schools.com/css/css_font.asp */
+
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+/* Intializes State of HTML*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 38px;
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+  padding: 38px;
+}
+----
+.topnav_de {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav_de a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav_de a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 41px;
+}
+
+.topnav_de a.active {
+  background-color: #ff0000;
+  color: white;
+  padding: 41px;
+}
+
+
+
+.details {
+  font-family: Monospace, Lucida;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+}
+
+h3 {
+  color: burlywood;
+}
+
+li:hover {
+  color: darkcyan;
+}
+td:hover {
+  color: darkcyan;
+}
+
+/* Body Font */
+body {
+  font-family: "Didact Gothic", sans-serif;
+  color: #333;
+  /* Padding Doesn't Oversize */
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #000000;
+  height: 80px;
+}
+
+nav {
+  /*nav bar width*/
+  width: 960px;
+  margin: 0 auto;
+  /* aligns menu with the logo */
+  display: flex;
+  /* logo to the left menu to the right*/
+  justify-content: space-between;
+}
+
+/* the language menu */
+.lang-menu {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 25px;
+  position: relative;
+}
+.lang-menu .selected-lang {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  /* hovers in the options and stays while choosing */
+  cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+  /* content is where the selected language is in */
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* the country flags */
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lang-menu .de:before{
+  /* content is where the selected language is in */
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* the country flags */
+  background-image: url(https://www.countryflags.io/de/flat/32.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 125px;
+  border-radius: 5px;
+  /* http://css3generator.com/ */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+  /* removes the bullet points of li */
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 125px;
+  /* padding > margin: so can hover to all selection elements */
+  padding: 5px 10px;
+  /* the width will not take any effect until block is said */
+  display: block;
+}
+/* changes the background colour when hovered */
+.lang-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+  content: "";
+  /* block wouldn't work without this */
+  /* for the alignment of flags and the name of the langaueg */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  /* the flags */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.de:before {
+  background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+
+.lang-menu:hover ul {
+  display: block;
+}
+
+#btn_links {
+  display: block;
+  background: #00ffff;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+#btn_sources {
+  display: block;
+  background: #00ffff;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+  background: #00729d;
+}
+.btn-2 {
+  background: #f98909;
+}
+
+.btn-2:hover {
+  background: #dc6c11;
+}
+
+main {
+  /* Scroll horizontally as needed */
+  overflow-x: auto;
+
+  /* Center contents */
+  text-align: center;
+}
+
+.black_background {
+  background-color: #262626;
+  color: white;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.gold_background {
+  background-color: #ffd700;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  padding: 25px;
+}
+
+.game_recc {
+  display: block;
+  background: #262626;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+#build {
+  color: black;
+  text-decoration: overline;
+}
+
+#home_sec1 {
+  padding-bottom: 5px;
+}
+
+#welcome {
+  padding: 10px;
+}
+
+#home_sec2 {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.end {
+  color: cyan;
+  border-style: solid;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+.gamer {
+  color: black;
+  font-size: 50px;
+}
+
+.the {
+  color: burlywood;
+  font-size: 50px;
+}
+
+.game_vid {
+  font-size: 30px;
+}
+
+.num_btn {
+  background-color: #ffd700; /* Green */
+  border: solid;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.num_btn1 {
+  background-color: black;
+  color: cyan;
+  border: 5px solid cyan;
+}
+
+.num_btn1:hover {
+  background-color: cyan;
+  color: black;
+}
+
+.p_c {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #000000;
+  color: cyan;
+}
+
+.title_gold {
+  color: black;
+  background: gold;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.button {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(139, 0, 0), 0 17px 50px 0 rgba(139, 0, 0);
+}
+
+.page_title {
+  font-weight: bold;
+}
+
+.name_links {
+  color: burlywood;
+}

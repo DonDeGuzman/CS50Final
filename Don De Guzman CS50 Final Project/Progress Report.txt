@@ -1,0 +1,47 @@
+Non-consecutive days due to breaks and completion of other labs and pset
+
+Day 1 
+-Brain Storming
+
+Day 2 
+-English and Deutsch Language Selector
+
+Day 3 
+-Applied Collapse tag
+-iframe tag for youtube
+-download link
+-button tag
+-link to other websites
+-active Top Navigation Bar
+-Filling up Content
+
+Day 4 
+-Finished Filling up Content. 
+-Applied link that opens another tab. 
+=Applied bookmark link
+-Applied a Pop-up function using Java and Css
+-Applied Functionality
+
+Day 5
+-Applied a pop up alert using Java
+-Finished up Functionality
+-Started Aesthetics
+
+Day 6
+-Finished Aesthetics Design
+-Finished Reviewing and Final Touches
+-Started German Version and English Spell checking
+-Started fixing font errors
+
+Day 7
+-Finished German Version
+-Finished English Spelling Check
+-Review 2 Finish
+-Finished Fixing Font errors
+-Preparing for Submission
+>Video Demo
+>README.md
+
+Day 8(Day of Submission)
+-Finished README.md
+-Finished Video Demo
